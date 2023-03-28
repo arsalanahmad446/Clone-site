@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+:root {
+    --color: white;
+    --background-color: #223a66;
+    --font-color: #222;
+    --hover: #e12454;
+    --form-bg :#f4f9fc ;
+
+}
+
+/* Address bar start */
+.addressdetails {
+    width: 100vw;
+    background-color: var(--background-color);
+    font-size: 8px;
+    color: var(--color);
+    font-weight: normal;
+    display: flex;
+    font-family: "Arial";
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.email,
+.address,
+.number {
+    display: flex;
+}
+
+.email a,
+.address a,
+.number a {
+    color: var(--color);
+    font-size: 1.3rem;
+}
+
+.email h1,
+.address h1,
+.number h1 {
+    margin-left: 3px;
+}
+
+/* Address bar End */
+
+/* navbar bar End */
+.header {
+    display: flex;
+    width: 80vw;
+    margin: 12px auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0.08px solid var(--background-color);
+}
+
+.lists {
+    display: flex;
+    gap: 30px;
+}
+
+.lists li a {
+    color: var(--font-color);
+    display: flex;
+    gap: 30px;
+    margin-right: 5px;
+}
+
+.lists li a:hover {
+    color: var(--hover);
+}
+
+.logo {
+    margin: auto 34px;
+    cursor: pointer;
+    color: var(--hover);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.inner {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    top: 6.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.inner a {
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.inner a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .inner {
+    display: block;
+    border-bottom: 2px solid var(--hover);
+}
+
+/* Home section */
+.home {
+    margin-top: 50px;
+    width: 100%;
+    padding: 50px;
+    background-image: url(/Home.jpg);
+}
+
+.textarea {
+    margin: auto;
+    width: 80%;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.line {
+    position: relative;
+    top: 12px;
+    margin: auto;
+    border-radius: 3px;
+    height: 6px;
+    width: 60px;
+    background-color: var(--hover);
+}
+
+.slogan {
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: 500;
+    color: var(--background-color);
+}
+
+.text h1 {
+    margin-top: 15px;
+    color: var(--hover);
+    font-size: 45px;
+
+}
+
+.text p {
+    margin-top: 25px;
+    padding: 12px auto;
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: var(--color);
+}
+
+.btn {
+    margin-top: 12px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--hover);
+    border-radius: 25px;
+    color: var(--color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--background-color);
+
+}
+
+span {
+    color: var(--hover);
+}
+
+.services {
+    width: 80%;
+    margin: 23px auto;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainconatiner {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 1.2rem;
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+    margin: 23px 2px;
+    width: 32%;
+    border-radius: 25px;
+    padding: 23px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--background-color);
+
+}
+
+.card p {
+    font-size: 15px;
+
+}
+
+.card h1 {
+    font-size: 18px;
+
+}
+
+.card i {
+    font-size: 6rem;
+    color: var(--hover);
+}
+
+.card:hover {
+    border: 2px solid var(--hover);
+    transform: scale(1.010);
+    cursor: pointer;
+}
+
+/* About section  */
+.about {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.about h1{
+    font-size: 2rem;
+}
+.aboutcontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 23px;
+}
+.images{
+    margin: auto;
+    padding: 23px;
+    width: 50%;
+}
+.images img{
+    width: 100%;
+}
+.info{
+    padding: 23px;
+    margin-top: 23px;
+    align-items: left;
+    text-align: left;
+
+    width: 50%;
+}
+
+/* info section */
+.patientnumber{
+    width: 80%;
+    margin: 50px auto;
+    padding: 34px;
+    background-color: var(--background-color);
+}
+.pateintcontainer{
+    display: flex;
+    margin: 23px auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--color);
+}
+.pateintcontainer h1{
+
+    font-size: 3.5rem;
+}
+.pateintcontainer p{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.award{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+}
+.award h1{
+    font-size: 3rem;
+    margin: 18px 0px;
+    color: var(--hover);
+    text-transform: uppercase;
+}
+.award p{
+    margin: 50px auto;
+    color: var(--background-color);
+    width: 70%;
+}
+
+.hpsites{
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicecard{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 23px 25px;
+    padding: 23px;
+}
+.servicecard:hover{
+    border: 1px solid var(--hover);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.cont{
+    display: block;
+    margin: auto;
+    padding: 12px;
+    text-align: center;
+    align-items:center ;
+    justify-content: center;
+}
+.cont h1{
+    font-size: 1.3rem;
+    padding: 15px;
+    color: var(--background-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+.servicecard p{
+    font-size: 14px;
+    text-align: left;
+    
+}
+.cont i{ 
+    color: var(--hover);
+    font-size: 4rem;
+}
+
+/* contact section */
+.contact{
+    width: 80%;
+    margin: 23px auto;
+    
+}
+.content{
+    display: flex;
+    
+}
+.contact h1{
+    text-align: center;
+    margin: 12px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.contact-image{
+    width: 50%;
+    padding: 23px;
+    padding: 23px;
+    
+}
+
+.contact-image img{
+    width: 100%;
+    
+}
+.form{
+    padding: 23px;
+    width: 50%;
+    
+}
+
+.form  select , option , input , textarea{
+    width: 40%;
+    padding: 12px;
+    font: 14px;
+    border-radius: 2px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--background-color);
+    background-color: var(--form-bg);
+    color: lightslategray;
+}
+.form select , option{
+    cursor: pointer;
+
+}
+
+textarea{
+    resize: none;
+    width: 85%;
+}
+.logoitems{
+    width: 80%;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: var(--background-color);
+    width: 100%;
+    color: var(--color);
+    padding: 10px;
+    
+}
+.footercont{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.companyprofile{
+    margin: 50px auto;
+    width: 40%;
+    
+}
+.companyprofile h2{
+    font-size: 3rem;
+    margin: 12px ;
+    color: var(--hover);
+
+}
+.companyprofile p{
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.companyprofile a{
+    
+    font-size: 2rem;
+    color: var(--color);
+    margin: 15px;
+    text-align: center;
+}
+.companyprofile a:hover{
+    color: var(--hover);
+    
+}
+.dep, .supp ,.touc{
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.dep  .line , .supp .line , .touc .line{
+    margin-left: 0px;
+}
+
+.deplinks a{
+    text-align: left;
+    display: block;
+    color: var(--color);
+    margin: auto;
+    margin-top: 23px;
+    color:  lightslategray;;
+}
+.deplinks a:hover{
+    color: var(--hover);
+}
+
+.mail h2{
+    font-size: 16px;
+    margin-top: 23px;
+    font-weight: 500;
+}
+.mail a h1{
+    font-size: 25px;
+    margin-top: 10px;
+    color: var(--hover);
+}
+.mail a h1:hover{
+    transform: scale(1.02);
+    color: var(--color);
+}
+
+.copyright{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 1.2rem;
+}

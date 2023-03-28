@@ -1,0 +1,193 @@
+/* Larges devices whose width is more than 992 pixels  */
+@media only screen and (max-width: 992px) {
+
+    .header {
+        display: block;
+    }
+
+    .lists {
+        margin: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 12px;
+        display: block;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .aboutcontainer {
+        display: block;
+        width: 100%;
+    }
+
+    .info,
+    .images {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pateintcontainer {
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hpsites {
+        display: block;
+    }
+
+    .servicecard {
+        width: 65%;
+        margin: auto;
+    }
+
+    .content {
+        width: 100%;
+        display: block;
+        nav-down: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-image {
+        width: 80%;
+        margin: auto;
+    }
+
+    .logoitems {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footercont {
+        width: 60%;
+        text-align: center;
+    }
+
+    .footercont .line {
+        text-align: center;
+        margin: auto;
+    }
+
+    .companyprofile,
+    .dep,
+    .supp,
+    .touc {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .companyprofile h2 {
+        font-size: 2.5rem;
+
+    }
+
+    .dep a,
+    .supp a,
+    .touc a {
+
+        text-align: center;
+
+    }
+
+}
+
+/* Medium devices whose width is between 768 to 992 pixels  */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+    
+    .email,
+    .address,
+    .number {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .form  select , option , input , textarea{
+        width: 90%;
+    }
+    .footercont{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .companyprofile,
+    .dep,
+    .supp,
+    .touc{
+        margin-top: 25px;
+    }
+    
+}
+
+/* very Small devices whose width is between 360 to 768 pixels  */
+
+@media only screen and (max-width: 600px) {
+   .container{
+    width: 100%;
+   }
+   .hpsites{
+    width: 100%;
+   }
+    footer{
+        width: 100%;
+    }
+    .footercont{
+        display: block;
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .companyprofile,
+    .dep,
+    .supp,
+    .touc{
+        width: 100%;
+    }
+    .pateintcontainer{
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 360px) {
+    
+   
+    .hpsites{
+        width: 100%;
+       }
+       .logoitems{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+       }
+       .servicecard{
+        width: 80%;
+       }
+       .form{
+        width: 100%;
+       }
+       .form  select , option , input , textarea{
+        width: 90%;
+    }
+    
+}
