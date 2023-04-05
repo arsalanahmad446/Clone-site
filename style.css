@@ -12,6 +12,7 @@
 :root {
     --color: white;
     --background-color: #223a66;
+    --footer-color: #596988;
     --font-color: #222;
     --hover: #e12454;
     --form-bg :#f4f9fc ;
@@ -74,7 +75,7 @@
     gap: 30px;
 }
 
-.lists li a {
+.lists li a{
     color: var(--font-color);
     display: flex;
     gap: 30px;
@@ -134,8 +135,9 @@
 .home {
     margin-top: 50px;
     width: 100%;
+    margin: auto;
     padding: 50px;
-    background-image: url(/Home.jpg);
+    background-color: var(--background-color);
 }
 
 .textarea {
@@ -161,7 +163,7 @@
     font-size: 25px;
     margin-top: 25px;
     font-weight: 500;
-    color: var(--background-color);
+    color: var(--color);
 }
 
 .text h1 {
@@ -190,7 +192,11 @@
     font-weight: 500;
     cursor: pointer;
 }
-
+.home .btn:hover{
+    background-color: white;
+    color: var(--hover);
+    font-weight: bold;
+}
 .btn:hover {
     background-color: var(--background-color);
 
@@ -248,7 +254,7 @@ span {
 
 .card:hover {
     border: 2px solid var(--hover);
-    transform: scale(1.010);
+    transform: scale(1.005);
     cursor: pointer;
 }
 
@@ -329,36 +335,34 @@ span {
 .hpsites{
     width: 80%;
     margin: 60px auto;
-    display: flex;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4 ,1fr);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .servicecard{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    width: 40%;
+    width: 90%;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    margin: 23px 25px;
-    padding: 23px;
+    margin: 23px auto;
+    padding: 23px 3px;
+    margin-top: 20px;
 }
 .servicecard:hover{
     border: 1px solid var(--hover);
-    transform: scale(1.01);
     cursor: pointer;
 }
 .cont{
     display: block;
     margin: auto;
     padding: 12px;
-    text-align: center;
-    align-items:center ;
-    justify-content: center;
 }
 .cont h1{
-    font-size: 1.3rem;
-    padding: 15px;
+    font-size: 1.2rem;
     color: var(--background-color);
     font-weight: 500;
     text-transform: uppercase;
@@ -366,7 +370,7 @@ span {
 }
 .servicecard p{
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     
 }
 .cont i{ 
@@ -382,6 +386,9 @@ span {
 }
 .content{
     display: flex;
+    margin: auto;
+    text-align: center;
+
     
 }
 .contact h1{
@@ -390,20 +397,20 @@ span {
     text-transform: uppercase;
     font-size: 2rem;
 }
-.contact-image{
-    width: 50%;
-    padding: 23px;
-    padding: 23px;
-    
+.contact p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  
 }
 
-.contact-image img{
-    width: 100%;
-    
-}
+
 .form{
+    align-items: center;
     padding: 23px;
-    width: 50%;
+    width: 100%;
+    color: black;
+    margin: auto;
     
 }
 
@@ -413,20 +420,24 @@ span {
     font: 14px;
     border-radius: 2px;
     margin: 10px;
-    border: none;
+    border: none ;
     outline: none;
     border: 1px solid var(--background-color);
     background-color: var(--form-bg);
     color: lightslategray;
+    
 }
 .form select , option{
     cursor: pointer;
 
 }
+.form .btn{
+    width: 20%;
+}
 
 textarea{
     resize: none;
-    width: 85%;
+    width: 82%;
 }
 .logoitems{
     width: 80%;

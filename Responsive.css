@@ -134,7 +134,12 @@
     .touc{
         margin-top: 25px;
     }
-    
+    .form .btn{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 100px;
+    }
 }
 
 /* very Small devices whose width is between 360 to 768 pixels  */
@@ -168,6 +173,12 @@
         align-items: center;
         justify-content: center;
     }
+    .form .btn{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 100px;
+    }
 }
 @media only screen and (max-width: 360px) {
     
@@ -188,6 +199,10 @@
        }
        .form  select , option , input , textarea{
         width: 90%;
+    }
+    .form .btn{
+        display: block;
+        width: 100px;
     }
     
 }
